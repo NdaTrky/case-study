@@ -1,13 +1,27 @@
-// data/data.js
-export const categories = [
-    { id: 1, name: 'Ana Yemekler', image: '/images/main-dish.jpg' },
-    { id: 2, name: 'Atıştırmalıklar', image: '/images/snacks.jpg' },
-];
-
-export const dailySpecials = [
-    { id: 1, name: 'Salata', price: 10, image: '/images/salad.jpg', description: 'Taze sebzelerle yapılmış.' },
-];
-
-export const reasons = [
-    { id: 1, text: 'Hızlı ve Güvenilir', icon: 'fast' },
-];
+export const mockData = {
+    header: {
+      phoneNumber: "+123 456 789",
+      logo: "/images/logo.png",
+      menuLinks: [
+        { id: 1, name: "Home", path: "/" },
+        { id: 2, name: "Shop", path: "/shop" },
+        { id: 3, name: "Pages", path: "/pages" },
+        { id: 4, name: "Blog", path: "/blog" },
+        { id: 5, name: "Contact", path: "/contact" }
+      ],
+      searchPlaceholder: "Search for food...",
+      icons: {
+        favorites: "/icons/heart.svg",
+        cart: "/icons/cart.svg",
+        profile: "/icons/user.svg"
+      }
+    }
+  };
+  export const heroData = {
+    title: "Delicious Roast Turkey",
+    subtitle: "Savor the taste",
+    description: "Experience the best roast turkey made with fresh ingredients.",
+    buttonText: "Order Now",
+    ımg: "/images/hero-bg.jpg", // Arka plan resmi için bir path
+  };
+    
