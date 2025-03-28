@@ -1,13 +1,15 @@
+<!-- ~/layouts/default.vue -->
 <template>
-          <div>
-            <Navbar :data="mockData.header" />  <!-- Navbar + Logo/Search -->
-            <slot />  <!-- Buraya index.vue, shop.vue gibi sayfaların içeriği gelir -->
-            <Footer />
-          </div>
-        </template>
-        
-        <script setup>
-        import { mockData } from '~/data/data.js';
-        </script>
+  <div>
+    <Navbar :data="mockData.header" /> 
+    <slot /> 
+    <Footer />
+  </div>
+</template>
 
-        <!--Deepseek-->
+<script setup>
+import { mockData } from '~/data/data.js';
+import Navbar from '~/components/layout/Navbar.vue';
+import Footer from '~/components/layout/Footer.vue';
+
+</script>
