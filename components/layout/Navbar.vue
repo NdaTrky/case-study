@@ -1,28 +1,27 @@
-<!-- ~/components/layout/Navbar.vue -->
 <template>
-  <header class="bg-white text-primary font-poppins ">
+  <header class="bg-white text-primary font-poppins">
     <!-- ÜST BANT: Mobil Menü + Navigasyon + Telefon -->
     <div class="border-b border-gray-200 py-3 px-4">
       <div class="container mx-auto flex items-center justify-between">
         <!-- Mobil Menü Butonu -->
         <button class="lg:hidden" @click="toggleMobileMenu">
-          <Bars3Icon class="h-6 w-6" />
+          <component :is="$icons.menu" class="h-6 w-6" />
         </button>
 
         <!-- Ana Navigasyon -->
-        <div class="hidden lg:flex flex-1 justify-center ">
+        <div class="hidden lg:flex flex-1 justify-center">
           <nav class="flex space-x-6">
             <div v-for="link in data.menuLinks" :key="link.id" class="relative group">
               <NuxtLink 
                 :to="link.path"
-                class=" hover:text-primary-gray flex items-center transition-colors duration-200"
+                class="hover:text-primary-gray flex items-center transition-colors duration-200"
                 @mouseenter="link.submenu.length ? openSubmenu(link.id) : null"
               >
                 {{ link.name }}
-                <ChevronDownIcon v-if="link.submenu.length" class="h-4 w-4 ml-1" />
+                <component :is="$icons.chevronDown" v-if="link.submenu.length" class="h-4 w-4 ml-1" />
               </NuxtLink>
 
-              <!-- Alt Menü -->
+              <!-- Alt Menü  -->
               <div 
                 v-if="link.submenu.length && activeSubmenu === link.id"
                 class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-50 border border-gray-100"
@@ -44,7 +43,7 @@
 
         <!-- Telefon Numarası -->
         <div class="flex items-center">
-          <PhoneIcon class="h-5 w-5 mr-2" />
+          <component :is="$icons.phone" class="h-5 w-5 mr-2" />
           <span class="text-sm font-medium">{{ data.contact.phone }}</span>
         </div>
       </div>
@@ -53,7 +52,7 @@
     <!-- ALT BANT: Logo + Search + Kullanıcı Aksiyonları -->
     <div class="container mx-auto px-2 py-2">
       <div class="flex items-center justify-between">
-        <!-- Logo ve Slogan -->
+        <!-- Logo ve Slogan  -->
         <div class="flex items-center">
           <NuxtImg
             src="/images/logo.png" 
@@ -71,7 +70,7 @@
         <!-- Search Bar -->
         <div class="hidden lg:flex items-center mx-6 flex-1 max-w-2xl">
           <div class="relative flex w-full border border-primary-green rounded-md overflow-hidden">
-            <!-- Arama Input -->
+            <!-- Arama Input  -->
             <input
               type="text"
               :placeholder="data.search.placeholder"
@@ -85,10 +84,10 @@
                 @click="toggleCategoryDropdown"
               >
                 {{ selectedCategory }}
-                <ChevronDownIcon class="h-4 w-4 ml-2" />
+                <component :is="$icons.chevronDown" class="h-4 w-4 ml-2" />
               </button>
               
-              <!-- Kategori Listesi -->
+              <!-- Kategori Listesi  -->
               <div 
                 v-if="isCategoryDropdownOpen"
                 class="absolute right-0 mt-1 w-48 bg-white shadow-lg rounded-md py-1 z-50 border border-gray-200"
@@ -107,7 +106,7 @@
             
             <!-- Arama Butonu -->
             <button class="bg-primary-search px-4 text-white hover:bg-primary">
-              <MagnifyingGlassIcon class="h-5 w-5" />
+              <component :is="$icons.search" class="h-5 w-5" />
             </button>
           </div>
         </div>
@@ -121,7 +120,9 @@
             class="flex items-center group hover:text-primary-gray"
           >
             <component 
-              :is="icons[action.icon]" 
+              :is="action.icon === 'accountIcon' ? $icons.user : 
+                   action.icon === 'wishlistIcon' ? $icons.heart : 
+                   $icons.cart" 
               class="h-6 w-6"
             />
             <span class="text-xs mt-1">{{ action.name }}</span>
@@ -130,7 +131,7 @@
       </div>
     </div>
 
-    <!-- MOBİL MENÜ -->
+    <!-- Mobil Menü-->
     <div v-if="isMobileMenuOpen" class="lg:hidden bg-white border-t py-2 px-4">
       <div v-for="link in data.menuLinks" :key="link.id">
         <NuxtLink
@@ -139,7 +140,7 @@
           @click="toggleMobileSubmenu(link.id)"
         >
           {{ link.name }}
-          <ChevronDownIcon v-if="link.submenu.length" class="h-4 w-4 ml-1 inline" />
+          <component :is="$icons.chevronDown" v-if="link.submenu.length" class="h-4 w-4 ml-1 inline" />
         </NuxtLink>
         
         <!-- Mobil Alt Menüler -->
@@ -161,19 +162,8 @@
 
 <script setup>
 import { ref } from 'vue';
-import { defineAsyncComponent } from 'vue';
-import {
-  Bars3Icon,
-  MagnifyingGlassIcon,
-  PhoneIcon,
-  ChevronDownIcon
-} from '@heroicons/vue/24/outline';
 
-const icons = {
-  accountIcon: defineAsyncComponent(() => import('@heroicons/vue/24/outline/UserIcon')),
-  wishlistIcon: defineAsyncComponent(() => import('@heroicons/vue/24/outline/HeartIcon')),
-  cartIcon: defineAsyncComponent(() => import('@heroicons/vue/24/outline/ShoppingCartIcon'))
-};
+const { $icons } = useNuxtApp();
 
 const props = defineProps({
   data: Object
@@ -186,7 +176,7 @@ const activeSubmenu = ref(null);
 const activeMobileSubmenu = ref(null);
 const selectedCategory = ref('All Categories');
 
-// Fonksiyonlar
+// Fonksiyonlar 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
   if (!isMobileMenuOpen.value) activeMobileSubmenu.value = null;

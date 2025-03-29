@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss'
   ],
+  plugins: ['~/components/ui/icons.js'],
 
   image: {
         presets: {
