@@ -92,19 +92,19 @@ export const mockData = {
       {
         id: 1,
         name: "Account",
-        icon: "accountIcon",
+        icon: "user",
         path: "/account",
       },
       {
         id: 2,
         name: "Wishlist",
-        icon: "wishlistIcon",
-        path: "/wishlist",
+        icon: "heart",
+        path: "/shopping-cart",
       },
       {
         id: 3,
         name: "Cart",
-        icon: "cartIcon",
+        icon: "fas fa-shopping-cart",
         path: "/cart",
       },
     ]
@@ -165,8 +165,195 @@ export const mockData = {
       options: "(205 Items)"
       }
     ]
+  },
 
+  // Best Sellers Verileri
+
+  bestSellers: [
+    {
+      id: 1,
+      name: "All Natural Italian-Style Chicken Meatballs",
+      brand: "Hodo Foods",
+      price: 238.85,
+      oldPrice: 245.8,
+      discount: "Save 35%",
+      img: "/images/dailybest-product1.jpeg",
+      sold: 90,
+      totalStock: 120,
+      badgeColor: "green",
+      rating:1,
+    },
+    {
+      id: 2,
+      name: "Angie’s Boomchickapop Sweet and Wommies",
+      brand: "Hodo Foods",
+      price: 238.85,
+      oldPrice: 245.8,
+      discount: "Sale",
+      img: "/images/dailybest-product2.jpeg",
+      sold: 90,
+      totalStock: 120,
+      badgeColor: "blue",
+      rating:1,
+    },
+    {
+      id: 3,
+      name: "Foster Farms Takeout Crispy Classic",
+      brand: "Hodo Foods",
+      price: 238.85,
+      oldPrice: 245.8,
+      discount: "Best sale",
+      img: "/images/dailybest-product3.jpeg",
+      sold: 90,
+      totalStock: 120,
+      badgeColor: "orange",
+      rating:1,
+    },
+    {
+      id: 4,
+      name: "Blue Diamond Almonds Lightly Salted",
+      brand: "Hodo Foods",
+      price: 238.85,
+      oldPrice: 245.8,
+      discount: "Save 15%",
+      img: "/images/dailybest-product4.jpeg",
+      sold: 90,
+      totalStock: 120,
+      badgeColor: "red",
+      rating:1,
+    },
+  ],
+  banner: {
+    title: "Bring nature into your home",
+    buttonText: "Shop Now →",
+    backgroundImage: "/images/dailybest.png",
+  },
+
+
+  // Featured Dishes (Standout Dishes From Out Menu) Verileri
+  standoutDishes: {
+    subtitle: "SPECIAL DISHES",
+    title: "Standout Dishes From Our Menu",
+    dishes: [
+      {
+        id: 1,
+        img: "/images/standoutdishes1.png",
+        name: "Fattoush salad",
+        options: "Description of the item",
+       
+      },
+      {
+        id: 2,
+        img: "/images/standoutdishes2.png",
+        name: "Vegetable salad",
+        options: "Description of the item",
+       
+      },
+      {
+        id: 3,
+        img: "/images/standoutdishes3.png",
+        name: "Egg vegi salad",
+        options: "Description of the item",
+       
+      }
+    ]
+  },
+  
+  // Deals Of The Day Verileri
+
+  dealsOfTheDay: [
+    {
+      id: 1,
+      name: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
+      brand: "NestFood",
+      price: 32.85,
+      oldPrice: 33.8,
+      rating: 4.0,
+      img: "/images/dailydeals1.png",
+    },
+    {
+      id: 2,
+      name: "Perdue Simply Smart Organics Gluten Free",
+      brand: "Old El Paso",
+      price: 24.85,
+      oldPrice: 26.8,
+      rating: 4.0,
+      img: "/images/dailydeals2.png",
+    },
+    {
+      id: 3,
+      name: "Signature Wood-Fired Mushroom and Caramelized",
+      brand: "Progresso",
+      price: 12.85,
+      oldPrice: 13.8,
+      rating: 3.0,
+      img: "/images/dailydeals3.png",
+    },
+    {
+      id: 4,
+      name: "Simply Lemonade with Raspberry Juice",
+      brand: "Yoplait",
+      price: 15.85,
+      oldPrice: 16.8,
+      rating: 3.0,
+      img: "/images/dailydeals4.png",
+    },
+  ],
+
+  // Footer Verileri
+
+  footer: {
+    brand: {
+      logo: "/images/logo.png",
+      name: "Foodzy",
+      description: "Foodzy is the biggest online food store. We deliver organic vegetables & fruits.",
+      contact: {
+        address: "123 Main St, Anytown, USA",
+        email: "contact@foodzy.com",
+        phone: "+1 (987) 654-3210"
+      }
+    },
+    companyLinks: [
+      "About Us",
+      "Delivery Information",
+      "Privacy Policy",
+      "Terms & Conditions",
+      "Contact Us",
+      "Support Center"
+    ],
+    categories: [
+      "Dairy & Bakery",
+      "Fruits & Vegetables",
+      "Snacks & Spices",
+      "Juice & Drinks",
+      "Chicken & Meat",
+      "Fast Food"
+    ],
+    newsletter: {
+      title: "Subscribe Our Newsletter",
+      placeholder: "Enter your email address",
+      decorativeIcons: [
+        "/images/footer-icon.png",
+        "/images/footer-icon2.png",
+        "/images/footer-icon3.png"
+      ]
+    },
+    socialMedia: {
+      images: [
+        "/images/footer-socialmedia.jpeg",
+        "/images/footer-socialmedia2.jpeg",
+        "/images/footer-socialmedia3.jpeg",
+        "/images/footer-socialmedia4.jpeg",
+        "/images/footer-socialmedia5.jpeg"
+      ],
+      icons: [
+        "fab fa-facebook-f",
+        "fab fa-twitter",
+        "fab fa-instagram",
+        "fab fa-pinterest",
+        "fab fa-youtube"
+      ],
+    },
+    copyright: "© 2024 Foodzy. All rights reserved."
   }
-
- 
 }

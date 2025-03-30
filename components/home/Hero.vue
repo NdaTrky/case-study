@@ -23,7 +23,7 @@
           :to="data.ctaButton.path"
           class="inline-flex items-center gap-3 bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-10 rounded-full text-lg shadow-lg transition-all"
         >
-          <component :is="$icons.arrowRight" class="w-6 h-6 order-first" />
+          <font-awesome-icon icon="fa-solid fa-arrow-right" class="w-6 h-6 order-first" />
           {{ data.ctaButton.text }}
         </NuxtLink>
       </div>
@@ -42,9 +42,9 @@
     <div class="absolute bottom-6 right-6 text-white text-sm opacity-90">
       <p class="mb-1">{{ data.description }}</p>
       <div class="flex gap-4">
-        <component :is="$icons.facebook" class="w-5 h-5 cursor-pointer hover:text-yellow-400 transition" />
-        <component :is="$icons.twitter" class="w-5 h-5 cursor-pointer hover:text-yellow-400 transition" />
-        <component :is="$icons.instagram" class="w-5 h-5 cursor-pointer hover:text-yellow-400 transition" />
+        <font-awesome-icon icon="fa-brands fa-facebook" class="w-5 h-5 cursor-pointer hover:text-yellow-400 transition" />
+        <font-awesome-icon icon="fa-brands fa-twitter" class="w-5 h-5 cursor-pointer hover:text-yellow-400 transition" />
+        <font-awesome-icon icon="fa-brands fa-instagram" class="w-5 h-5 cursor-pointer hover:text-yellow-400 transition" />
       </div>
       <p class="mt-3 font-semibold">{{ data.contact.label }} {{ data.contact.phone }}</p>
     </div>
@@ -52,6 +52,8 @@
 </template>
 
 <script setup>
+
+
 const props = defineProps({
   data: {
     type: Object,
@@ -72,8 +74,6 @@ const props = defineProps({
     })
   }
 });
-
-const { $icons } = useNuxtApp();
 </script>
 
 <style scoped>

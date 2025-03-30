@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/*Font - AweSome İconları*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,4 +26,14 @@
   .nav-link {
     @apply text-primary-gray hover:text-primary-red transition-colors duration-200;
   }
+}
+
+/* global.css */
+.fa-icon-fix {
+  @apply inline-block align-middle; /* Font Awesome ikonları için gerekli */
+}
+
+/* Hover efektlerini iyileştirme */
+.hover\:text-primary-gray:hover {
+  color: #4a5568; /* Tailwind'in gray-600 rengi */
 }

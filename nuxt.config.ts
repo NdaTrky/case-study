@@ -3,8 +3,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss'
   ],
-  plugins: ['~/components/ui/icons.js'],
-
+  plugins: [ '~/plugins/fontawesome.client.js'],
   image: {
         presets: {
         default: {
