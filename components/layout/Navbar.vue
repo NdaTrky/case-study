@@ -178,27 +178,3 @@ const selectCategory = (category) => {
   isCategoryDropdownOpen.value = false;
 };
 </script>
-
-<style scoped>
-.router-link-active {
-  @apply font-medium;
-}
-
-/* Mobil menü animasyonu */
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.3s ease;
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-/* Kullanıcı aksiyonları için ikon ve metin hizalaması */
-.flex.items-center.space-x-1 {
-  display: flex;
-  align-items: center;
-}
-</style>

@@ -110,6 +110,7 @@ export const mockData = {
     ]
   },
 
+  
   // Hero Verileri
   hero: {
     title: "Self-Delicious ROAST TURKEY",
