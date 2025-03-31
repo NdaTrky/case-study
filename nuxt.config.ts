@@ -13,10 +13,6 @@ export default defineNuxtConfig({
         }
       }
     },
-    // Varsayılan provider için (Nuxt 3'te artık gerekli değil)
-    // providers: {
-    //   defaultProvider: 'ipx' // Varsayılan yerel provider
-    // }
   },
 
   nitro: {

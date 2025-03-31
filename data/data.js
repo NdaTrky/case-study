@@ -300,6 +300,70 @@ export const mockData = {
     },
   ],
 
+  // Why Choose Us Verileri
+
+  whyChooseUs: {
+    title: "Why People Choose Us?",
+    features: [
+      {
+        id: 1,
+        title: "Convenient and Reliable",
+        description: "Whether you dine in, take out, or order delivery, our service is convenient, fast, and reliable, making mealtime hassle-free.",
+        icon: "fa-thumbs-up"
+      },
+      {
+        id: 2,
+        title: "Variety of Options",
+        description: "From hearty meals to light snacks, we offer a wide range of options to suit every taste and craving.",
+        icon: "fa-list-ul"
+      },
+      {
+        id: 3,
+        title: "Premium Quality",
+        description: "Our burgers are grilled to perfection, with juicy patties and flavorful toppings that make every bite a delicious experience.",
+        icon: "fa-burger"
+      }
+    ]
+  },
+
+  // Shop Banner Verileri 
+
+  shopBanner: {
+    title: "Stay home & get your daily needs from our shop",
+    subtitle: "Start Your Daily Shopping with",
+    placeholder: "Your email address",
+    buttonText: "Subscribe",
+    backgroundImage: "/images/shopbanner-bg.png",
+    personImage: "/images/shopbanner-photo.png",
+    features: [
+      {
+        id: 1,
+        title: "Best prices & offers",
+        description: "Orders $50 or more",
+      },
+      {
+        id: 2,
+        title: "Free delivery",
+        description: "24/7 amazing services",
+      },
+      {
+        id: 3,
+        title: "Great daily deal",
+        description: "When you sign up",
+      },
+      {
+        id: 4,
+        title: "Wide assortment",
+        description: "Mega Discounts",
+      },
+      {
+        id: 5,
+        title: "Easy returns",
+        description: "Within 30 days",
+      }
+    ]
+  },
+
   // Footer Verileri
 
   footer: {
