@@ -92,24 +92,24 @@
               :placeholder="footer.newsletter.placeholder"
               class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
             >
-            <button class="bg-black text-white px-4 py-2 rounded-r-md hover:bg-gray-800 transition-colors font-semibold text-sm flex items-center gap-2">
-              <FontAwesomeIcon :icon="['fas', 'paper-plane']" />
-              Subscribe
+            <button class="text-black py-2  rounded-r-mdt ransition-colors font-semibold text-sm flex items-center">
+              <FontAwesomeIcon :icon="['fas', 'paper-plane']" class="relative right-6"/>
+              
             </button>
           </div>
           
           <!-- Sosyal Medya İkonları -->
           <div class="flex items-center gap-4 mb-4">
-      <a href="#" class="text-gray-600 hover:text-red-500 transition-colors">
+      <a href="https://www.facebook.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
         <FontAwesomeIcon :icon="['fab', 'facebook-f']" class="text-xl"/>
       </a>
-      <a href="#" class="text-gray-600 hover:text-red-500 transition-colors">
+      <a href="https://www.facebook.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
         <FontAwesomeIcon :icon="['fab', 'twitter']" class="text-xl"/>
       </a>
-      <a href="#" class="text-gray-600 hover:text-red-500 transition-colors">
+      <a href="https://www.instagram.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
         <FontAwesomeIcon :icon="['fab', 'instagram']" class="text-xl"/>
       </a>
-      <a href="#" class="text-gray-600 hover:text-red-500 transition-colors">
+      <a href="https://www.pinterest.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
         <FontAwesomeIcon :icon="['fab', 'pinterest']" class="text-xl"/>
       </a>
     </div>
@@ -121,7 +121,7 @@
               :key="index" 
               :src="image" 
               alt="Social Media" 
-              class="w-12 h-12 object-cover rounded-md"
+              class="w-14 h-14 object-cover rounded-sm"
               loading="lazy"
               :modifiers="{ quality: 80 }"
             />

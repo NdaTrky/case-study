@@ -396,7 +396,7 @@ export const mockData = {
     ],
     newsletter: {
       title: "Subscribe Our Newsletter",
-      placeholder: "Enter your email address",
+      placeholder: "Search here...",
       decorativeIcons: [
         "/images/footer-icon.png",
         "/images/footer-icon2.png",
