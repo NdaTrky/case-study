@@ -140,11 +140,13 @@ const props = defineProps({
   data: Object,
 });
 
-const isMobileMenuOpen = ref(false);
-const isCategoryDropdownOpen = ref(false);
-const activeSubmenu = ref(null);
+// Reactive state yönetimi
+
+const isMobileMenuOpen = ref(false); // mobil menü açık mı/kapalı mı?
+const isCategoryDropdownOpen = ref(false); // kategori dropdown açık mı/kapalı mı?
+const activeSubmenu = ref(null); 
 const activeMobileSubmenu = ref(null);
-const selectedCategory = ref("All Categories");
+const selectedCategory = ref("All Categories"); // seçilen kategori (input alanındaki)
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;

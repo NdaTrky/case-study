@@ -10,7 +10,7 @@
 
     <!-- Görsel Alanı -->
     <div :class="[ 
-      type === 'standout' ? 'w-[280px] h-[280px] top-[20px]' : 'w-[110px] h-[110px] top-[39px] bg-primary-gray',
+      type === 'standout' ? 'w-[280px] h-[280px] top-[20px]' : 'w-[110px] h-[110px] top-[39px] bg-[#C0B2632B]',
       'rounded-full flex items-center justify-center absolute'
     ]">
       <NuxtImg

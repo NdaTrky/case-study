@@ -3,13 +3,12 @@
     <!-- Üst Kısım (Background Image ile) -->
     <div class="relative mb-16">
       <!-- Background Image -->
-      <div class="absolute inset-0 -z-10 h-[110%] w-[calc(100%+40px)] -left-5 -top-5 overflow-hidden rounded-md">
+      <div class="absolute inset-0 overflow-hidden rounded-md">
         <NuxtImg 
           :src="shopBanner.backgroundImage" 
           alt="Background" 
           class="w-full h-full object-cover rounded-xl"
           loading="lazy"
-          sizes="150vw"
         />
       </div>
 
@@ -84,6 +83,5 @@
 
 <script setup>
 import { mockData } from '~/data/data.js'
-
 const shopBanner = mockData.shopBanner
 </script>

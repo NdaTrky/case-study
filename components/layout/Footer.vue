@@ -1,30 +1,30 @@
 <template>
-  <footer class="bg-gray-100 py-16 relative">
+  <footer class="bg-gray-100 py-[28px] relative"> 
     <!-- Dekoratif İkonlar -->
-    <div class="absolute top-12 left-10 w-16 h-16 flex items-center justify-center -mt-6">
-  <NuxtImg 
-    :src="footer.newsletter.decorativeIcons[0]" 
-    alt="Lemon" 
-    class="w-14 h-14 object-contain"
-    loading="lazy"
-  />
-</div>
-<div class="absolute bottom-0 right-[400px] w-18 h-18 flex items-center justify-center mb-6">
-  <NuxtImg 
-    :src="footer.newsletter.decorativeIcons[1]" 
-    alt="Pepper" 
-    class="w-16 h-16 object-contain"
-    loading="lazy"
-  />
-</div>
-<div class="absolute top-0 right-10 w-16 h-16 flex items-center justify-center -mt-6">
-  <NuxtImg 
-    :src="footer.newsletter.decorativeIcons[2]" 
-    alt="Tomato" 
-    class="w-14 h-14 object-contain"
-    loading="lazy"
-  />
-</div>
+    <div class="absolute top-12 left-10 w-16 h-16 flex items-center justify-center">
+      <NuxtImg 
+        :src="footer.newsletter.decorativeIcons[0]" 
+        alt="Lemon" 
+        class="w-14 h-14 object-contain"
+        loading="lazy"
+      />
+    </div>
+    <div class="absolute bottom-0 right-[400px] w-18 h-18 flex items-center justify-center mb-6">
+      <NuxtImg 
+        :src="footer.newsletter.decorativeIcons[1]" 
+        alt="Pepper" 
+        class="w-16 h-16 object-contain"
+        loading="lazy"
+      />
+    </div>
+    <div class="absolute top-0 right-10 w-16 h-16 flex items-center justify-center -mt-6">
+      <NuxtImg 
+        :src="footer.newsletter.decorativeIcons[2]" 
+        alt="Tomato" 
+        class="w-14 h-14 object-contain"
+        loading="lazy"
+      />
+    </div>
     
 
     <div class="container mx-auto px-4">
@@ -100,22 +100,22 @@
           
           <!-- Sosyal Medya İkonları -->
           <div class="flex items-center gap-4 mb-4">
-      <a href="https://www.facebook.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
-        <FontAwesomeIcon :icon="['fab', 'facebook-f']" class="text-xl"/>
-      </a>
-      <a href="https://www.facebook.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
-        <FontAwesomeIcon :icon="['fab', 'twitter']" class="text-xl"/>
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
-        <FontAwesomeIcon :icon="['fab', 'instagram']" class="text-xl"/>
-      </a>
-      <a href="https://www.pinterest.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
-        <FontAwesomeIcon :icon="['fab', 'pinterest']" class="text-xl"/>
-      </a>
-    </div>
+            <a href="https://www.facebook.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
+              <FontAwesomeIcon :icon="['fab', 'facebook-f']" class="text-xl"/>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
+              <FontAwesomeIcon :icon="['fab', 'twitter']" class="text-xl"/>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
+              <FontAwesomeIcon :icon="['fab', 'instagram']" class="text-xl"/>
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors">
+              <FontAwesomeIcon :icon="['fab', 'pinterest']" class="text-xl"/>
+            </a>
+          </div>
     
-    <!-- Sosyal Medya Görselleri -->
-    <div class="flex flex-wrap gap-2 mt-4">
+          <!-- Sosyal Medya Görselleri -->
+          <div class="flex flex-wrap gap-2 mt-4">
             <NuxtImg 
               v-for="(image, index) in footer.socialMedia.images" 
               :key="index" 
@@ -128,7 +128,6 @@
           </div>
         </div>
       </div>
-
 
       <!-- Copyright -->
       <div class="border-t border-gray-200 mt-12 pt-8 text-center text-gray-600 text-sm">

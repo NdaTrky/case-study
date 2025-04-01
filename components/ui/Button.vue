@@ -14,7 +14,7 @@
         defineProps({
           variant: {
             type: String,
-            default: "primary", // Varsayılan buton rengi kırmızı olacak
+            default: "primary", 
           },
         });
         </script>

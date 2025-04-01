@@ -113,19 +113,13 @@ export const mockData = {
   
   // Hero Verileri
   hero: {
-    title: "Self-Delicious ROAST TURKEY",
-    subtitle: "Order Now",
-    description: "Follow Us Now",
-    ctaButton: {
-      text: "Order Now",
-      path: "/order"
-    },
-    contact: {
-      phone: "268-7834-2054",
-      label: "Call Us:"
-    },
-    address: "Tyborsavvetskatsova",
-    heroImg: "/images/hero-bg.jpg"
+    title: "Super Delicious",
+    subtitleImage: "/images/hero-roastTurkey.png", // ROAST TURKEY görseli
+    buttonText: "Order Now",
+    backgroundImage: "/images/shopbannerandhero-bg.png",
+    productImage: "/images/hero-image.jpg",
+    phone: "+65 7854 9634",
+    website: "yourwebsite.com",
   },
 
 
@@ -310,19 +304,19 @@ export const mockData = {
         id: 1,
         title: "Convenient and Reliable",
         description: "Whether you dine in, take out, or order delivery, our service is convenient, fast, and reliable, making mealtime hassle-free.",
-        icon: "fa-thumbs-up"
+        icon: "/images/whychooseus-icon.png"
       },
       {
         id: 2,
         title: "Variety of Options",
         description: "From hearty meals to light snacks, we offer a wide range of options to suit every taste and craving.",
-        icon: "fa-list-ul"
+        icon: "/images/whychooseus-icon1.png"
       },
       {
         id: 3,
         title: "Premium Quality",
         description: "Our burgers are grilled to perfection, with juicy patties and flavorful toppings that make every bite a delicious experience.",
-        icon: "fa-burger"
+        icon: "/images/whychooseus-icon2.png"
       }
     ]
   },
@@ -334,7 +328,7 @@ export const mockData = {
     subtitle: "Start Your Daily Shopping with",
     placeholder: "Your email address",
     buttonText: "Subscribe",
-    backgroundImage: "/images/shopbanner-bg.png",
+    backgroundImage: "/images/shopbannerandhero-bg.png",
     personImage: "/images/shopbanner-photo.png",
     features: [
       {

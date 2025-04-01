@@ -3,7 +3,7 @@
     <!-- Üst Başlık -->
     <div class="m-8 p-8 flex flex-col items-center font-bold">
       <h2 class="text-xl text-primary-red uppercase mb-2">{{ popularCategories.subtitle }}</h2>
-      <h1 class="text-3xl text-primary-dark mb-6">{{ popularCategories.title }}</h1>
+      <h1 class="text-5xl text-primary-dark mb-6">{{ popularCategories.title }}</h1>
       
     </div>
 
