@@ -63,7 +63,7 @@ export const mockData = {
     
     // Telefon Numarası
     contact: {
-      icon: "phone",
+      icon: ["fas", "phone"],
       phone: "+123 (456) (7890)",
     },
 
@@ -92,19 +92,19 @@ export const mockData = {
       {
         id: 1,
         name: "Account",
-        icon: "user",
+        icon: ["fas", "user"],
         path: "/account",
       },
       {
         id: 2,
         name: "Wishlist",
-        icon: "heart",
+        icon: ["fas","heart"],
         path: "/shopping-cart",
       },
       {
         id: 3,
         name: "Cart",
-        icon: "fas fa-shopping-cart",
+        icon: ["fas", "cart-shopping"],
         path: "/cart",
       },
     ]
@@ -113,13 +113,29 @@ export const mockData = {
   
   // Hero Verileri
   hero: {
-    title: "Super Delicious",
-    subtitleImage: "/images/hero-roastTurkey.png", // ROAST TURKEY görseli
+    titlePart1: "Super",
+    titlePart2: "DELICIOUS",
+    subtitleImage: "/images/hero-roastTurkey.png",
+    subtitleAlt: "ROAST TURKEY",
     buttonText: "Order Now",
+    buttonIcon: ['fas', 'arrow-right'],
     backgroundImage: "/images/shopbannerandhero-bg.png",
     productImage: "/images/hero-image.jpg",
+    productAlt: "Roast Turkey",
     phone: "+65 7854 9634",
-    website: "yourwebsite.com",
+    phoneText: "Call Us",
+    website: "Typeyourwebsitehere",
+    socialTitle: "Follow Us Now",
+    socialIcons: [
+      { icon: ['fab', 'facebook-f'] },
+      { icon: ['fab', 'youtube'] },
+      { icon: ['fab', 'twitter'] },
+      { icon: ['fab', 'instagram'] }
+    ],
+    contactIcons: {
+      
+      website: ['fas', 'globe']
+    }
   },
 
 

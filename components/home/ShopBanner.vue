@@ -27,10 +27,10 @@
 
         <!-- Sol Taraf - İçerik -->
         <div class="w-full lg:flex-1">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             {{ shopBanner.title }}
           </h1>
-          <p class="text-lg text-gray-600 mb-8">
+          <p class="text-lg text-gray-400 mb-8">
             {{ shopBanner.subtitle }}
             <span class="text-green-500 font-semibold">Nest Mart</span>
           </p>
@@ -38,7 +38,7 @@
           <!-- Email Abonelik Alanı -->
           <div class="flex items-center bg-white border border-gray-300 rounded-full px-4 py-2 shadow-md max-w-lg mb-12">
             <FontAwesomeIcon 
-              :icon="['fas', 'envelope']" 
+              :icon = "['fas', 'paper-plane']"
               class="text-gray-400 text-lg mr-3"
             />
             <input 

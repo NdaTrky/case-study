@@ -24,7 +24,7 @@
           />
         </div>
         
-        <!-- Info Card - Half Overlapping -->
+        <!-- Info Card  -->
         <div class="absolute w-[calc(100%-16px)] sm:w-[calc(100%-20px)] left-1/2 -translate-x-1/2 bottom-0 transform translate-y-1/2 bg-white rounded-md sm:rounded-lg shadow-xs sm:shadow-sm p-2 sm:p-3 md:p-4 border border-gray-100">
           <p class="text-gray-500 text-[10px] xs:text-xs mb-1 truncate">{{ deal.brand }}</p>
           <h3 class="text-[11px] xs:text-xs sm:text-sm font-semibold text-gray-900 mb-1 sm:mb-2 line-clamp-2 leading-tight">{{ deal.name }}</h3>

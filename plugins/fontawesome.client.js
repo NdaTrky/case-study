@@ -1,12 +1,11 @@
-﻿// plugins/fontawesome.js
-import { library, config } from '@fortawesome/fontawesome-svg-core'
+﻿import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 // Solid icons
 import { 
   faUser, faHome, faCog, 
   faHeart as fasHeart, 
-  faChevronLeft, faChevronRight, // Burada zaten var
+  faChevronLeft, faChevronRight, 
   faStar,
   faBars,
   faPhoneVolume,
@@ -19,12 +18,10 @@ import {
   faLeaf,
   faClock,
   faMedal,
-  // Yeni eklemeler (sadece daha önce olmayanlar)
-  faMapMarkerAlt, // Adres için
-  faEnvelope, // Email için
-  faPhoneAlt, // Telefon için
-  faPaperPlane // Subscribe butonu için
-  // faChevronRight'i tekrar eklemiyoruz çünkü zaten yukarıda var
+  faMapMarkerAlt,
+  faEnvelope, 
+  faPhoneAlt, 
+  faPaperPlane 
 } from '@fortawesome/free-solid-svg-icons'
 
 // Regular icons
@@ -46,8 +43,9 @@ import {
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-// Tüm ikonları kütüphaneye ekle
+// Tüm ikonları kütüphaneye ekleme
 library.add(
+
   // Var olan solid ikonlar
   faUser, faHome, faCog, fasHeart, faChevronLeft, faChevronRight, faStar,
   

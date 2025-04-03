@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-4 py-8">
+  <section class="container mx-auto px-4 py-8 font-inter">
     <!-- Üst Başlık -->
     <div class="m-8 p-8 flex flex-col items-center font-bold">
       <h2 class="text-xl text-primary-red uppercase mb-2">{{ popularCategories.subtitle }}</h2>

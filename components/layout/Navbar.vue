@@ -1,7 +1,7 @@
 <template>
-  <header class="bg-white text-primary font-poppins">
+  <header class="bg-primary-white font-poppins">
     <!-- Üst Bilgi -->
-    <div class="border-b border-gray-200 py-3 px-4">
+    <div class="border-b  py-3 px-4">
       <div class="container mx-auto flex items-center justify-between">
         <button class="lg:hidden" @click="toggleMobileMenu">
           <FontAwesomeIcon icon="bars" class="h-6 w-6" />
@@ -22,7 +22,7 @@
 
               <div
                 v-if="link.submenu.length && activeSubmenu === link.id"
-                class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-50 border border-gray-100"
+                class="absolute left-0 mt-2 w-48 bg-primary-white shadow-lg rounded-md py-1 z-50 border border-gray-100"
                 @mouseleave="closeSubmenu"
               >
                 <NuxtLink
@@ -40,7 +40,7 @@
         </div>
 
         <div class="flex items-center">
-          <div class="bg-white p-2 rounded-full">
+          <div class="bg-primary-white p-2 rounded-full">
             <FontAwesomeIcon icon="phone-volume" class="h-5 w-5 text-primary" />
           </div>
           <span class="text-sm font-medium">{{ data.contact.phone }}</span>
@@ -49,7 +49,7 @@
     </div>
 
     <!-- Mobil Menü -->
-    <div v-if="isMobileMenuOpen" class="lg:hidden bg-white border-b">
+    <div v-if="isMobileMenuOpen" class="lg:hidden bg-primary-white border-b">
       <nav class="container mx-auto px-4 py-4">
         <div v-for="link in data.menuLinks" :key="link.id" class="mb-2">
           <NuxtLink
@@ -123,7 +123,7 @@
             class="flex items-center space-x-1 group hover:text-primary-gray"
           >
             <div class="bg-white p-2 rounded-full">
-              <FontAwesomeIcon :icon="action.icon" class="h-6 w-6" />
+              <FontAwesomeIcon :icon="action.icon" class="h-6 w-6 text-gray-600" />
             </div>
             <span class="text-xs">{{ action.name }}</span>
           </NuxtLink>
@@ -142,11 +142,11 @@ const props = defineProps({
 
 // Reactive state yönetimi
 
-const isMobileMenuOpen = ref(false); // mobil menü açık mı/kapalı mı?
-const isCategoryDropdownOpen = ref(false); // kategori dropdown açık mı/kapalı mı?
+const isMobileMenuOpen = ref(false); 
+const isCategoryDropdownOpen = ref(false); 
 const activeSubmenu = ref(null); 
 const activeMobileSubmenu = ref(null);
-const selectedCategory = ref("All Categories"); // seçilen kategori (input alanındaki)
+const selectedCategory = ref("All Categories"); 
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;

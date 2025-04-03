@@ -4,20 +4,20 @@
     <div class="flex items-center justify-between mb-12">
       <div>
         <h4 class="text-red-500 font-semibold text-lg mb-2 uppercase tracking-wide">
-          SPECIAL DISHES
+          {{ standoutDishes.subtitle }}
         </h4>
-        <h2 class="text-4xl font-bold text-gray-800">Standout Dishes From Our Menu</h2>
+        <h2 class="text-4xl font-bold text-gray-800">{{ standoutDishes.title }}</h2>
       </div>
       <!-- Sağdaki Ok İkonları -->
       <div class="flex gap-3">
         <button 
-          @click="prevSlide"
+          
           class="w-10 h-10 rounded-full bg-gray-200 hover:bg-red-500 transition-colors flex items-center justify-center"
         >
           <FontAwesomeIcon :icon="['fas', 'chevron-left']" class="text-gray-600 hover:text-white" />
         </button>
         <button 
-          @click="nextSlide"
+          
           class="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center transition-colors"
         >
           <FontAwesomeIcon :icon="['fas', 'chevron-right']" />
@@ -56,7 +56,7 @@
 import { ref } from 'vue';
 import { mockData } from '~/data/data.js';
 
-const standoutDishes = mockData.standoutDishes;
+const standoutDishes = ref(mockData.standoutDishes);
 
 // Kalp İşlevselliği
 const likedItems = ref(new Set());
@@ -69,14 +69,3 @@ const toggleLike = (id) => {
 };
 const isLiked = (id) => likedItems.value.has(id);
 </script>
-
-<style scoped>
-/* Font Awesome ikonları için ek stil */
-svg {
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  overflow: visible;
-  vertical-align: -0.125em;
-}
-</style>
