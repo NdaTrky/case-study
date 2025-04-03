@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-100 py-[28px] relative"> 
+  <footer class="bg-gray-100 py-[70px] relative"> 
     <!-- Dekoratif İkonlar -->
     <div class="absolute top-12 left-10 w-16 h-16 flex items-center justify-center">
       <NuxtImg 

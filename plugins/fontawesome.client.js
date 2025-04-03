@@ -27,7 +27,9 @@ import {
 // Regular icons
 import { 
   faHeart as farHeart,
-  faStar as farStar
+  faStar as farStar,
+  //! faShoppingCart as farShoppingCart
+
 } from '@fortawesome/free-regular-svg-icons'
 
 // Brand icons (sosyal medya için)
@@ -50,7 +52,8 @@ library.add(
   faUser, faHome, faCog, fasHeart, faChevronLeft, faChevronRight, faStar,
   
   // Var olan regular ikonlar
-  farHeart, farStar,
+  farHeart, farStar, 
+  //! farShoppingCart,
   
   // Navbar ikonları
   faBars,

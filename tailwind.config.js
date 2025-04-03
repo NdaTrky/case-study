@@ -36,7 +36,8 @@ module.exports = {
           nunito: ['Nunito', 'sans-serif'],
           lato: ['Lato', 'sans-serif'],
           arial: ['Arial', 'sans-serif'],
-          poppins: ['Poppins', 'sans-serif']
+          poppins: ['Poppins', 'sans-serif'],
+          dancing: ['Dancing Script', 'sans-serif']
         }
       }
     },

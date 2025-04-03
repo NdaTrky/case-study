@@ -140,6 +140,7 @@ const props = defineProps({
   data: Object,
 });
 
+
 // Reactive state yönetimi
 
 const isMobileMenuOpen = ref(false); 

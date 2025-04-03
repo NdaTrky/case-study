@@ -11,11 +11,12 @@
       </a>
     </div>
 
+    
     <!-- Ürün Kartları -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-6 md:gap-8 place-items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-y-8 gap-6 md:gap-8 place-items-center">
       <div v-for="deal in dealsOfTheDay" :key="deal.id" class="relative group w-full max-w-xs space-y-4">
         <!-- Image Container -->
-        <div class="w-full h-[160px] sm:h-[180px] md:h-[220px] lg:h-[240px] xl:h-[280px] rounded-lg md:rounded-xl bg-gray-100 overflow-hidden">
+        <div class="w-full h-[160px] sm:h-[90px] md:h-[220px] lg:h-[240px] xl:h-[280px] rounded-lg md:rounded-xl bg-gray-100 overflow-hidden">
           <NuxtImg 
             :src="deal.img" 
             :alt="deal.name" 

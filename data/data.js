@@ -111,31 +111,19 @@ export const mockData = {
   },
 
   
-  // Hero Verileri
-  hero: {
-    titlePart1: "Super",
-    titlePart2: "DELICIOUS",
-    subtitleImage: "/images/hero-roastTurkey.png",
-    subtitleAlt: "ROAST TURKEY",
-    buttonText: "Order Now",
-    buttonIcon: ['fas', 'arrow-right'],
-    backgroundImage: "/images/shopbannerandhero-bg.png",
-    productImage: "/images/hero-image.jpg",
-    productAlt: "Roast Turkey",
-    phone: "+65 7854 9634",
-    phoneText: "Call Us",
-    website: "Typeyourwebsitehere",
-    socialTitle: "Follow Us Now",
-    socialIcons: [
+  heroData: {
+    bgImage: 'shopbannerandhero-bg.png',
+    titleImage: 'hero-roastTurkey.png',
+    foodImage: 'hero-chicken-image.jpg',
+    decorationImage: 'herodesign.png',
+    phone: '658-7854-9634',
+    socialMedia: 'Typeyourwebsitehere',
+    icons: [
       { icon: ['fab', 'facebook-f'] },
       { icon: ['fab', 'youtube'] },
       { icon: ['fab', 'twitter'] },
-      { icon: ['fab', 'instagram'] }
-    ],
-    contactIcons: {
-      
-      website: ['fas', 'globe']
-    }
+      { icon: ['fab', 'instagram'] } 
+    ]
   },
 
 
