@@ -47,7 +47,7 @@
               class="flex-grow bg-transparent focus:outline-none text-sm"
             >
             <button 
-              class="bg-red-500 text-white px-5 py-2 rounded-full font-semibold hover:bg-red-600 transition"
+              class="bg-primary-red text-white px-5 py-2 rounded-full font-semibold hover:bg-primary-red transition"
             >
               {{ shopBanner.buttonText }}
             </button>
@@ -69,7 +69,7 @@
           class="w-8 h-8 object-contain"
         />
         <div>
-          <h3 class="font-semibold text-gray-900 text-sm md:text-base">
+          <h3 class="font-semibold text-primary-gray text-sm md:text-base">
             {{ feature.title }}
           </h3>
           <p class="text-gray-500 text-xs mt-1">

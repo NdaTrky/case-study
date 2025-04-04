@@ -2,14 +2,14 @@
   <section class="container mx-auto px-5 py-20">
     <!-- Başlık -->
     <div class="flex flex-col sm:flex-row items-center justify-between mb-12">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 text-center sm:text-left">
+      <h2 class="text-2xl sm:text-3xl font-bold text-primary-gray text-center sm:text-left">
         Daily Best Sells
       </h2>
 
       <div class="flex gap-4 text-sm font-medium mt-4 sm:mt-0">
-        <span class="text-green-500 cursor-pointer">Featured</span>
-        <span class="text-gray-500 cursor-pointer">Popular</span>
-        <span class="text-gray-500 cursor-pointer">New added</span>
+        <span class="text-primary-green cursor-pointer">Featured</span>
+        <span class="text-primary-gray  cursor-pointer">Popular</span>
+        <span class="text-primary-gray cursor-pointer">New added</span>
       </div>
     </div>
 
